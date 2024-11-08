@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Learn JavaScript with our comprehensive learning hub"
+    />
+    <title>JavaScript Learning with Ellis</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="#" class="nav-brand" data-translate="title"
+          >JavaScript Learning with Ellis</a
+        >
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-16 6h16"
+            />
+          </svg>
+        </button>
+        <div class="nav-links">
+          <a href="#home" class="nav-link" data-translate="nav-home">Home</a>
+          <a href="#concepts" class="nav-link" data-translate="nav-concepts"
+            >Concepts</a
+          >
+          <a href="#resources" class="nav-link" data-translate="nav-resources"
+            >Resources</a
+          >
+          <a href="#roadmap" class="nav-link" data-translate="nav-roadmap"
+            >Roadmap</a
+          >
+          <button
+            class="language-btn"
+            onclick="toggleLanguage()"
+            data-translate="language-btn"
+          >
+            ES/EN
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <h1 class="hero-title" data-translate="welcome">
+            Welcome to JavaScript Learning Hub
+          </h1>
+          <p class="hero-subtitle" data-translate="hero-subtitle">
+            Master JavaScript with our comprehensive learning resources
+          </p>
+          <div class="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ogdtB_m6G5g"
+              title="JavaScript Tutorial"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Concepts -->
+      <section id="concepts" class="section">
+        <div class="container">
+          <h2 class="section-title" data-translate="concepts-title">
+            JavaScript Concepts
+          </h2>
+          <div class="concept-grid">
+            <!-- Concept Card 1 -->
+            <article class="concept-card">
+              <div class="card-icon">🔄</div>
+              <h3 data-translate="variables">Variables</h3>
+              <p data-translate="variables-desc">
+                Learn about var, let, and const
+              </p>
+              <a
+                href="https://www.w3schools.com/js/js_variables.asp"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Learn More →</a
+              >
+            </article>
+
+            <!-- Concept Card 2 -->
+            <article class="concept-card">
+              <div class="card-icon">⚡</div>
+              <h3 data-translate="functions">Functions</h3>
+              <p data-translate="functions-desc">
+                Understanding JavaScript functions
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=j1laALb8OVM"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Learn More →</a
+              >
+            </article>
+
+            <!-- Concept Card 3 -->
+            <article class="concept-card">
+              <div class="card-icon">🔍</div>
+              <h3 data-translate="objects">Objects</h3>
+              <p data-translate="objects-desc">
+                Working with JavaScript objects
+              </p>
+              <a
+                href="https://www.geeksforgeeks.org/objects-in-javascript/"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Learn More →</a
+              >
+            </article>
+
+            <!-- Concept Card 4 -->
+            <article class="concept-card">
+              <div class="card-icon">🔄</div>
+              <h3 data-translate="arrays">Arrays</h3>
+              <p data-translate="arrays-desc">Mastering JavaScript arrays</p>
+              <a
+                href="https://www.youtube.com/watch?v=cDCzz8vJf3Y"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Learn More →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resources-->
+      <section id="resources" class="section">
+        <div class="container">
+          <h2 class="section-title" data-translate="resources-title">
+            Learning Resources
+          </h2>
+          <div class="resources-grid">
+            <div class="resource-card">
+              <h3>MDN Web Docs</h3>
+              <p>Comprehensive JavaScript documentation</p>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit →
+              </a>
+            </div>
+            <div class="resource-card">
+              <h3>JavaScript.info</h3>
+              <p>Modern JavaScript Tutorial</p>
+              <a
+                href="https://javascript.info/"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit →
+              </a>
+            </div>
+            <div class="resource-card">
+              <h3>freecodecamp</h3>
+              <p>JavaScript Algorithms and Data Structures</p>
+              <a
+                href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Roadmap-->
+      <section id="roadmap" class="section">
+        <div class="container">
+          <h2 class="section-title" data-translate="roadmap-title">
+            Learning Roadmap
+          </h2>
+          <div class="roadmap-visualization">
+            <img
+              src="output/roadmap.png"
+              alt="JavaScript Learning Path"
+              class="roadmap-image"
+            />
+          </div>
+          <div class="roadmap-timeline">
+            <div class="roadmap-item">
+              <div class="roadmap-content">
+                <h3 data-translate="beginner">Beginner</h3>
+                <p data-translate="beginner-desc">Basic syntax and concepts</p>
+                <ul class="roadmap-list">
+                  <li>Variables & Data Types</li>
+                  <li>Control Flow</li>
+                  <li>Functions Basics</li>
+                </ul>
+              </div>
+            </div>
+            <div class="roadmap-item">
+              <div class="roadmap-content">
+                <h3 data-translate="intermediate">Intermediate</h3>
+                <p data-translate="intermediate-desc">
+                  DOM manipulation and events
+                </p>
+                <ul class="roadmap-list">
+                  <li>DOM Manipulation</li>
+                  <li>Event Handling</li>
+                  <li>ES6+ Features</li>
+                </ul>
+              </div>
+            </div>
+            <div class="roadmap-item">
+              <div class="roadmap-content">
+                <h3 data-translate="advanced">Advanced</h3>
+                <p data-translate="advanced-desc">Async programming and APIs</p>
+                <ul class="roadmap-list">
+                  <li>Promises & Async/Await</li>
+                  <li>API Integration</li>
+                  <li>Modern JS Frameworks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 JavaScript Learning Ellis. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/translations.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
